@@ -24,7 +24,7 @@ const DemoCarousel = () => {
                 onClickItem={onClickItem}
                 infiniteLoop
                 autoPlay
-                interval={4000}
+                interval={2000}
                 showStatus={false}
                 dynamicHeight={false}
                 swipeable

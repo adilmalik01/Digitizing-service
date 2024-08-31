@@ -822,9 +822,7 @@ video {
 .gd {
 	height: 1.5rem;
 }
-.hd {
-	height: 1.75rem;
-}
+
 .id {
 	height: 2rem;
 }
@@ -856,7 +854,7 @@ video {
 	width: 1.25rem;
 }
 .sd {
-	width: auto;
+	width: 120px;
 }
 .td {
 	width: 460px;
