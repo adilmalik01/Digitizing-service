@@ -27,45 +27,45 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center  space-x-3 text-black/80">
             <Link
-             to={"/"}
+              to={"/"}
               className="border-b-[3px] transition-all duration-700 text-[16px] tracking-tight font-semibold border-transparent hover:border-black active:border-black px-3 py-2"
             >
               Home
             </Link>
             <Link
-               to={"/service"}
+              to={"/service"}
               className="border-b-[3px] transition-all duration-700 text-[16px] tracking-tight font-semibold border-transparent hover:border-black px-3 py-2"
             >
               Services
             </Link>
             <Link
-             to={"/about"}
+              to={"/about"}
               className="border-b-[3px] transition-all duration-700 text-[16px] tracking-tight font-semibold border-transparent hover:border-black px-3 py-2"
             >
               About Us
             </Link>
             <Link
-               to={"/contact"}
+              to={"/contact"}
               className="border-b-[3px] transition-all duration-700 text-[16px] tracking-tight font-semibold border-transparent hover:border-black px-3 py-2"
             >
               Contact Us
             </Link>
             <Link
-               to={"/home"}
+              to={"/order-now"}
               className="border-b-[3px] transition-all  items-end duration-700 text-[16px] tracking-tight font-semibold border-transparent hover:border-black px-3 py-2"
             >
-            Order Now 
+              Order Now
             </Link>
           </div>
 
           <div className="lg:hidden  flex items-center">
             {isClick ? (
-              <button className=" bg-red-300" onClick={toggleNavbar}>
-                <Icon.XLg size={25} />
+              <button className="" onClick={toggleNavbar}>
+                <Icon.XLg color="black" size={25} />
               </button>
             ) : (
               <button onClick={toggleNavbar}>
-                <Icon.List size={25} />
+                <Icon.List color="black" size={25} />
               </button>
             )}
           </div>
@@ -73,31 +73,30 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`lg:hidden transition-all duration-300 ease-out overflow-hidden ${
-          isClick ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`lg:hidden transition-all duration-300 ease-out overflow-hidden ${isClick ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
           <Link
-            to={"/home"}
+            to={"/"}
             className="border-b-[3px] block transition-all duration-300 tracking-tight font-semibold border-transparent hover:bg-[#33373d] hover:text-white px-3 py-2"
           >
-            Vin check
+            Home
           </Link>
           <Link
-          to={"/service"}
+            to={"/service"}
             className="border-b-[3px] block transition-all duration-300 tracking-tight font-semibold border-transparent hover:bg-[#33373d] hover:text-white px-3 py-2"
           >
-            Dealer Program
+            Service
           </Link>
           <Link
             to={"/about"}
             className="border-b-[3px] block transition-all duration-300 tracking-tight font-semibold border-transparent hover:bg-[#33373d] hover:text-white px-3 py-2"
           >
-            Data product
+            Abous Us
           </Link>
           <Link
-               to={"/contact"}
+            to={"/contact"}
             className="border-b-[3px] block transition-all duration-300 tracking-tight font-semibold border-transparent hover:bg-[#33373d] hover:text-white px-3 py-2"
           >
             Contact us
@@ -107,7 +106,7 @@ const Navbar = () => {
             to={"/order-now"}
             className="border-b-[3px] block transition-all duration-300 tracking-tight font-semibold border-transparent hover:bg-[#33373d] hover:text-white px-3 py-2"
           >
-            Order Now 
+            Order Now
           </Link>
         </div>
       </div>
